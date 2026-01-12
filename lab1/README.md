@@ -26,7 +26,7 @@ This lab demonstrates creating a multi-container Kubernetes Pod with shared volu
 
 ```bash
 # Create the Pod
-kubectl apply -f demo-pod.yaml
+kubectl apply -f pod.yaml
 
 # Check Pod status
 kubectl get pods
@@ -38,8 +38,14 @@ kubectl describe pod demo
 kubectl logs demo -c main-container
 kubectl logs demo -c sidecar-container
 
-# Test Nginx inside the Pod
-kubectl exec -it demo -- curl localhost:80
+# Login to the main-container
+kubectl exec -it demo -c main-container -- sh
 
-# Delete the Pod
-kubectl delete pod demo
+Create a test file under /mnt/nfs inside the Nginx container.
+Exit the container view the file from the host under /mnt/shared, which is the NFS share.
+
+# View the busybox container logs
+kubectl logs -f demo -c sidecar-container
+ 
+
+
