@@ -1,4 +1,4 @@
-# Demo Pod Lab
+# Creating a Pod with probes, resources and volumes
 
 This lab demonstrates creating a multi-container Kubernetes Pod with shared volumes and resource management.
 
