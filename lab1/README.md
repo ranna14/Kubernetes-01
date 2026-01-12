@@ -44,8 +44,6 @@ kubectl exec -it demo -c main-container -- sh
 Create a test file under /mnt/nfs inside the Nginx container.
 Exit the container view the file from the host under /mnt/shared, which is the NFS share.
 
-# View the busybox container logs
-kubectl logs -f demo -c sidecar-container
  
 
 
