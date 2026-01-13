@@ -1,6 +1,6 @@
 # Pods and Services
 
-This is lab practice for creating and interacting with Kubernetes Pods and Services. The lab demonstrates **ClusterIP** and **NodePort** services, accessing services from within and outside the cluster, and basic pod customization.
+This is a lab practice for creating and interacting with Kubernetes Pods and Services. The lab demonstrates **ClusterIP** and **NodePort** services, accessing services from within and outside the cluster, and basic pod customization.
 
 ---
 
