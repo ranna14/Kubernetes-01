@@ -29,7 +29,7 @@ kubectl exec -it web-app02 -- bash
 ```
 
 ### 3. Create a ClusterIP Service
-Create my-clusterip-service-yaml
+Create clusterip-service-yaml
 Apply it
 ```
 kubectl apply -f clusterip-service.yaml
@@ -47,7 +47,7 @@ exit
 ```
 
 ### 5. Create a NodePort Service
-Create my-nodeport-service.yaml
+Create nodeport-service.yaml
 Apply it 
 ```
 kubectl apply -f nodeport-service.yaml
